@@ -1,3 +1,125 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+
+$mauve: rgb(40, 255, 55);
+$red: rgb(255, 47, 168);
+$blue: rgb(42, 255, 255);
+$yellow: rgb(255, 255, 33);
+
+body {
+  background-color: rgb(0,0,0);
+}
+
+div {
+  text-align: center;
+  margin-top: 10%;
+}
+#email {
+  display: inline-block;
+  margin-left: -15px;
+  font-size: 50px;
+  line-height: 80px;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: slide 8s linear infinite;
+  background-size: auto 400px;
+  background-position: left 0px;
+  background-image: linear-gradient(to bottom,
+    $mauve 0px, $mauve 100px,
+    black 100px,
+    $red 102px,$red 130px,
+    black 130px,
+    $blue 132px, $blue 180px,
+    black 180px,
+    $yellow 182px, $yellow 200px,
+    black 200px,
+    $mauve 202px, $mauve 240px,
+    black 240px,
+    $red 242px, $red 300px,
+    black 300px,
+    $blue 302px, $blue 350px,
+    black 350px,
+    $yellow 352px, $yellow 398px,
+    black 399px, black 400px
+  );
+   &:nth-child(odd) {
+    top: 30px;
+    background-image: linear-gradient(to bottom,     $mauve 0px, $mauve 70px,
+    black 70px,
+    $red 72px,$red 100px,
+    black 100px,
+    $blue 102px, $blue 150px,
+    black 150px,
+    $yellow 152px, $yellow 170px,
+    black 170px,
+    $mauve 172px, $mauve 210px,
+    black 210px,
+    $red 212px, $red 270px,
+    black 270px,
+    $blue 272px, $blue 320px,
+    black 320px,
+    $yellow 322px, $yellow 370px
+  );
+  }
+}
+
+span {
+  display: inline-block;
+  margin-left: -15px;
+  font-size: 200px;
+  line-height: 190px;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: slide 2s linear infinite;
+  background-size: auto 400px;
+  background-position: left 0px;
+  background-image: linear-gradient(to bottom,
+    $mauve 0px, $mauve 100px,
+    black 100px,
+    $red 102px,$red 130px,
+    black 130px,
+    $blue 132px, $blue 180px,
+    black 180px,
+    $yellow 182px, $yellow 200px,
+    black 200px,
+    $mauve 202px, $mauve 240px,
+    black 240px,
+    $red 242px, $red 300px,
+    black 300px,
+    $blue 302px, $blue 350px,
+    black 350px,
+    $yellow 352px, $yellow 398px,
+    black 399px, black 400px
+  );
+   &:nth-child(odd) {
+    top: 30px;
+    background-image: linear-gradient(to bottom,     $mauve 0px, $mauve 70px,
+    black 70px,
+    $red 72px,$red 100px,
+    black 100px,
+    $blue 102px, $blue 150px,
+    black 150px,
+    $yellow 152px, $yellow 170px,
+    black 170px,
+    $mauve 172px, $mauve 210px,
+    black 210px,
+    $red 212px, $red 270px,
+    black 270px,
+    $blue 272px, $blue 320px,
+    black 320px,
+    $yellow 322px, $yellow 370px
+  );
+  }
+}
+
+@keyframes slide {
+  100% {
+    background-position: left -400px;
+  }
+}
