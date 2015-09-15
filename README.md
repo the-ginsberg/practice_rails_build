@@ -26,4 +26,4 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
-<a href="http://imgur.com/SUPLu17"><img src="http://imgur.com/SUPLu17" title="source: imgur.com" /></a>
+<a href="http://i.imgur.com/SUPLu17.jpg?1"><img src="http://i.imgur.com/SUPLu17.jpg?1" title="source: imgur.com" /></a>
