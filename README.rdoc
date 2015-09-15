@@ -26,3 +26,5 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="SUPLu17"><a href="//imgur.com/SUPLu17">Russian Roulette</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
