@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player: MyString
+  bulloc: 1
+  round: 1
+  alive: false
+
+two:
+  player: MyString
+  bulloc: 1
+  round: 1
+  alive: false

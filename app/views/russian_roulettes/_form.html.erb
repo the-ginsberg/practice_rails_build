@@ -1,0 +1,33 @@
+<%= form_for(@russian_roulette) do |f| %>
+  <% if @russian_roulette.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@russian_roulette.errors.count, "error") %> prohibited this russian_roulette from being saved:</h2>
+
+      <ul>
+      <% @russian_roulette.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :player %><br>
+    <%= f.text_field :player %>
+  </div>
+  <div class="field">
+    <%= f.label :bulloc %><br>
+    <%= f.number_field :bulloc %>
+  </div>
+  <div class="field">
+    <%= f.label :round %><br>
+    <%= f.number_field :round %>
+  </div>
+  <div class="field">
+    <%= f.label :alive %><br>
+    <%= f.check_box :alive %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Player:</strong>
+  <%= @russian_roulette.player %>
+</p>
+
+<p>
+  <strong>Bulloc:</strong>
+  <%= @russian_roulette.bulloc %>
+</p>
+
+<p>
+  <strong>Round:</strong>
+  <%= @russian_roulette.round %>
+</p>
+
+<p>
+  <strong>Alive:</strong>
+  <%= @russian_roulette.alive %>
+</p>
+
+<%= link_to 'Edit', edit_russian_roulette_path(@russian_roulette) %> |
+<%= link_to 'Back', russian_roulettes_path %>

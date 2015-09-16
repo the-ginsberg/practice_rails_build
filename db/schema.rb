@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150915194822) do
+ActiveRecord::Schema.define(version: 20150916144313) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,15 @@ ActiveRecord::Schema.define(version: 20150915194822) do
     t.integer  "bullet_loc"
     t.integer  "round"
     t.boolean  "alive"
+  end
+
+  create_table "russian_roulettes", force: :cascade do |t|
+    t.string   "player"
+    t.integer  "bulloc"
+    t.integer  "round"
+    t.boolean  "alive"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

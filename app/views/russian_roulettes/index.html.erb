@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Russian Roulettes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Bulloc</th>
+      <th>Round</th>
+      <th>Alive</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @russian_roulettes.each do |russian_roulette| %>
+      <tr>
+        <td><%= russian_roulette.player %></td>
+        <td><%= russian_roulette.bulloc %></td>
+        <td><%= russian_roulette.round %></td>
+        <td><%= russian_roulette.alive %></td>
+        <td><%= link_to 'Show', russian_roulette %></td>
+        <td><%= link_to 'Edit', edit_russian_roulette_path(russian_roulette) %></td>
+        <td><%= link_to 'Destroy', russian_roulette, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Russian roulette', new_russian_roulette_path %>
