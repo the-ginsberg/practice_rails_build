@@ -81,7 +81,7 @@ class RussianRoulettesController < ApplicationController
     end
 
     def set_round
-      @round = 0
+      @round = 1
     end
 
     def set_alive
