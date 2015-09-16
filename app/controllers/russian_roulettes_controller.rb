@@ -1,5 +1,8 @@
 class RussianRoulettesController < ApplicationController
   before_action :set_russian_roulette, only: [:show, :edit, :update, :destroy]
+  before_action :set_bulloc, only: :create
+  before_action :set_round, only: :create
+  before_action :set_alive, only: :create
 
   # GET /russian_roulettes
   # GET /russian_roulettes.json
@@ -15,6 +18,9 @@ class RussianRoulettesController < ApplicationController
   # GET /russian_roulettes/new
   def new
     @russian_roulette = RussianRoulette.new
+    @russian_roulette.bulloc = @bulloc
+    @russian_roulette.round = @round
+    @russian_roulette.alive = @alive
   end
 
   # GET /russian_roulettes/1/edit
@@ -25,6 +31,9 @@ class RussianRoulettesController < ApplicationController
   # POST /russian_roulettes.json
   def create
     @russian_roulette = RussianRoulette.new(russian_roulette_params)
+    @russian_roulette.bulloc = @bulloc
+    @russian_roulette.round = @round
+    @russian_roulette.alive = @alive
 
     respond_to do |format|
       if @russian_roulette.save
@@ -65,6 +74,18 @@ class RussianRoulettesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_russian_roulette
       @russian_roulette = RussianRoulette.find(params[:id])
+    end
+
+    def set_bulloc
+      @bulloc = rand(1..6)
+    end
+
+    def set_round
+      @round = 0
+    end
+
+    def set_alive
+      @alive = true
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
